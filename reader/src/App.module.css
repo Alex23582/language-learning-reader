@@ -1,0 +1,200 @@
+.main{
+  display: flex;
+  height: 100%;
+}
+
+.chapterselector{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.chapterselector p{
+  margin: 0 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.chapterbutton:first-of-type{
+  transform: rotate(180deg);
+}
+
+.chapterbutton{
+  mask-image: url(./icons/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg);
+  border: none;
+  width: 35px;
+  height: 35px;
+  mask-position: center;
+  mask-size: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.chapterbutton:hover{
+  background-color: rgb(116, 141, 196);
+}
+
+.textcontainer{
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow-y: hidden;
+  padding: 2rem 0;
+  text-align: left;
+  color: white;
+}
+
+.leftside{
+  width: 70%;
+  height: 100%;
+}
+
+.controlcontainer{
+  width: 30%;
+  height: 100%;
+}
+
+.sentencecontainer{
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.sentencenum{
+  color: #989FAA;
+  text-align: right;
+  width: 2rem;
+  flex-shrink: 0;
+}
+
+.sentence{
+  text-align: justify;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.currentsentencecontainer{
+  background-color: #1A1F25;
+  border-radius: 0 10px 10px 0;
+}
+
+.word{
+  margin: 2px 5px;
+  border-radius: 10px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.currentsentencecontainer .sentence{
+  font-size: 2rem;
+}
+
+.currentsentencecontainer .sentencenum{
+  font-size: 1.5rem;
+  height: 70px;
+}
+
+.currentsentencecontainer .word{
+  margin: 2px 0;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+
+.currentsentencecontainer .word:hover{
+  background-color: #0D1C2A;
+}
+
+.futuresentencecontainer{
+  color: #3b3d41;
+}
+
+.controlcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.controlbox{
+  width: 90%;
+  background-color: #1A1F25;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.inputtextarea{
+  width: 90%;
+  min-height: 100px;
+  margin-bottom: 20px;
+  background-color: #0D1C2A;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  resize: vertical;
+}
+
+.button{
+  background-color: #0D1C2A;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-family: 'Montserrat';
+  width: 90%;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover{
+  background-color: #0c161f;
+}
+
+.chatresponse{
+  width: 90%;
+  text-align: center;
+}
+
+.wordinfobox{
+  width: 90%;
+  max-height: 40%;
+  overflow-y: auto;
+  background-color: #1A1F25;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.wordinfoheader{
+  margin-left: 1rem;
+}
+
+.wordinfotranslation{
+  color: rgb(138, 138, 138);
+}
+
+.loadingspinnercontainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.wordinfosourcetargetpaircontainer{
+  background-color: #101418;
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+}
+
+.wordinfosourcetargetpaircontainer p{
+  margin: 0;
+}
